@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #2c2a55; 
+    transition: all 0.3s ease-in-out;
+}
+
+
+header {
+    background-color: #1f1a3d; 
+    color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in;
+    background: linear-gradient(45deg, #21172c, #18006f6b);
+    border: solid;
+    border-color: #201d35;
+    position: fixed;
+    display: flex;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #69a5f4;
+}
+
+
+#home {
+    color: rgb(227, 198, 254);
+    text-shadow: #2c2a55 2px 2px 2px;
+    text-align: center;
+    background-size: cover;
+    padding: 150px 0px;
+    background-position: center;
+    background-image: url(images/Distant_Warmth.webp);
+    animation: fadeIn 1s ease-in;
+    border-radius: 15px 15px 15px 15px;
+    border: solid;
+    border-color: #201d35;
+}
+
+#home .intro h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    animation: slideIn 1s ease-out;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#home .intro p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    animation: slideIn 1s ease-out 0.5s;
+}
+
+#home .cta {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-image 0.3s ease;
+    animation: fadeIn 1s ease-in 1s;
+    background-color: #69a5f4;
+    cursor: pointer;
+}
+
+#home .cta:hover {
+    transition: background-color 0.3s ease-in-out;
+    background-color: #3d2a7f;
+}
+
+
+#about {
+    color: #6964be;
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+    border-radius: 15px 15px 15px 15px;
+    border: solid;
+    border-color: #201d35;
+    background: linear-gradient(135deg, #1f1a3d, #69a5f4);
+    background-position: center;
+    background-image: url(images/mewo.jpg);
+    background-size: contain;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+    font-family: fantasy;
+    font-stretch: semi-expanded;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+
+#portfolio {
+    padding: 60px 20px;
+    background: center;
+    background-image: url(images/✧_.jpg);
+    background-size: cover;
+    animation: fadeIn 1s ease-in;
+    border-radius: 15px 15px 15px 15px;
+    border: solid;
+    border-color: #201d35;
+}
+
+#portfolio h2 {
+    color: #363460;
+    text-shadow: #837eed 2px 2px 2px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: slideIn 1s ease-out;
+    font-family: 'Roboto Mono', monospace;
+    font-stretch: semi-expanded;
+}
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: #7967b9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-item h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+    color: #dcdcdc;
+    margin-bottom: 10px;
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: #69a5f4; 
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.portfolio-item a:hover {
+    color: #e0e0e0;
+}
+
+
+#contact {
+    padding: 60px 20px;
+    background-color: #1f1a3d;
+    animation: fadeIn 1s ease-in;
+    background-position: center;
+    background-image: url(images/mewo.jpg);
+    background-size: contain;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: slideIn 1s ease-out;
+    font-family: 'Roboto Mono', monospace;
+    font-stretch: semi-expanded;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+}
+
+#contact input, #contact textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    font-size: 1rem;
+    background-color: #3d2a7f;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact input:focus, #contact textarea:focus {
+    background-color: #69a5f4;
+    color: #2c2a55;
+}
+
+#contact button {
+    background-color: #69a5f4;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #3d2a7f;
+}
+img{
+    width: 200px;
+    height: 400px;
+    object-fit: cover; 
+}
+
+
+footer {
+    background-color: #1f1a3d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+footer a {
+    color: #69a5f4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #e0e0e0;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
